@@ -123,6 +123,8 @@
         PAGE: buildStyle({ visual: 'roundrect', fill: '#aecbfa' }, { center: true }),
         CHOICE: buildStyle({ visual: 'rhomb', fill: '#aecbfa' }, { center: true, }, { center: true }),
         CLASS: buildStyle({ visual: 'class', fill: '#aecbfa' }, { center: true, bold: true }),
+        ENTITY: buildStyle({ visual: 'table' }, { center: true, bold: true }),
+        START: buildStyle({ visual: 'start' }, {}),
         END: buildStyle({ visual: 'end' }, {}),
         LABEL: buildStyle({ visual: 'none' }, { center: true }),
         INPUT: buildStyle({ visual: 'input' }, { center: true }),
@@ -139,9 +141,7 @@
         REFERENCE: buildStyle({ visual: 'class', dashed: true }, { center: true }),
         SENDER: buildStyle({ visual: 'sender' }, {}),
         SOCKET: buildStyle({ visual: 'socket' }, {}),
-        START: buildStyle({ visual: 'start' }, {}),
         SYNC: buildStyle({ visual: 'sync' }, { center: true }),
-        TABLE: buildStyle({ visual: 'table' }, { center: true, bold: true }),
         TRANSCEIVER: buildStyle({ visual: 'transceiver' }, {}),
     };
     function box(config, clas) {

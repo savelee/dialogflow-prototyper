@@ -21,6 +21,8 @@ String sourceCode = """
 [<page> Order product]-> [<flow> Order Process]
 [<page> Goodbye]-> [<page> Any other questions?]
 [<page> Any other questions?]-> No [<end> End]
+
+[<entity> Artist | Alice Googler || G's N' Roses || The Goo Fighters || The Google Dolls]1-*[<entity> Album| Greatest Hits || Live]
 """;
 
 String helpDoc = """
@@ -34,11 +36,14 @@ Classifier types:
 [<page> name]
 [<choice> name]
 [<input> name]
+[<start> name]
+[<end> name]
+
+[<entity> name | value 1 || value 2]
+
 ---
 [<label> name]
 [<hidden> name]
-[<start> name]
-[<end> name]
 [<usecase> name]
 [<database> name]
 [<reference> name]
